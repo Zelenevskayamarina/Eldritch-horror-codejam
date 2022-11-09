@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Comic Sans MS';
+}
+
+.main {
+  display: block;
+}
+
+.board-game {
+  background-position: 50%;
+  background-image: url("../assets/home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  gap: 20px;
+  height: 100vh;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.board-game__ancients {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 37%;
+  padding: 20px;
+}
+
+.board-game__ancients .ancient-card {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 300px;
+  width: 240px;
+  overflow: hidden;
+}
+
+.card__active {
+  border: 10px solid rgba(175, 16, 16, 0.7);
+}
+
+.board-game__levels {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  min-width: 25%;
+}
+
+.board-game__levels .board-game__level {
+  box-sizing: border-box;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  min-width: 200px;
+  cursor: pointer;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+  background-color: rgba(255, 255, 255, .3);
+  border-radius: 5px;
+}
+
+.board-game__level:hover {
+  background-color: rgba(175, 16, 16, 0.7);
+}
+
+
+.levels__active {
+  visibility: visible;
+}
+
+.level__active {
+  background-color: rgba(175, 16, 16, 0.7);
+}
+
+.board-game__decks {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  min-width: 37%;
+}
+
+
+.board-game__shuffle {
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+  background-color: rgba(255, 255, 255, .3);
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.board-game__shuffle:hover {
+  background-color: rgba(175, 16, 16, 0.7);
+}
+
+.shuffle__active {
+  visibility: visible;
+}
+
+.shuffle__hidden {
+  visibility: hidden;
+}
+
+.current-state {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 30%;
+  display: none;
+}
+
+.state__active {
+  display: block;
+}
+
+.stage-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stage-title {
+  font-size: 16px;
+  color: rgba(255, 255, 255, .5);
+  margin: 0;
+}
+
+.dots-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 20%;
+  font-family: 'Silkscreen';
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.green {
+  background-color: rgb(12, 120, 12);
+}
+
+.brown {
+  background-color: rgb(71, 50, 2);
+}
+
+.blue {
+  background-color: rgb(64, 7, 150);
+}
+
+.deck-container {
+  display: flex;
+}
+
+.deck {
+  background-size: cover;
+  height: 190px;
+  width: 130px;
+  margin-right: 20px;
+  box-shadow:
+    0 0 7px #fff,
+    0 0 9px #fff,
+    0 0 11px #fff,
+    0 0 13px #0fa,
+    0 0 15px #0fa,
+    0 0 17px #0fa,
+    0 0 19px #0fa,
+    0 0 21px #0fa;
+}
+
+.last-card {
+  background-size: cover;
+  height: 190px;
+  width: 130px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+.active {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+  ;
+}
+
+
+.active-card {
+  box-shadow:
+    0 0 7px #fff,
+    0 0 9px #fff,
+    0 0 11px #fff,
+    0 0 13px rgb(210, 118, 184),
+    0 0 15px rgb(210, 118, 184),
+    0 0 17px rgb(210, 118, 184),
+    0 0 19px rgb(210, 118, 184),
+    0 0 21px rgb(210, 118, 184),
+}
